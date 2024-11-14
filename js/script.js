@@ -347,7 +347,7 @@ function isUserLoggedIn() {
   const loggedInUserIdJson = localStorage.getItem("loggedInUserId");
   const loggedInUserId = JSON.parse(loggedInUserIdJson);
   if (loggedInUserId === null) {
-    window.location.href = "../index.html";
+    window.location.href = "./index.html";
   }
   return loggedInUserId;
 }
@@ -358,7 +358,7 @@ window.isUserLoggedIn = isUserLoggedIn;
  */
 function userLogOut() {
   localStorage.removeItem("loggedInUserId");
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
 }
 window.userLogOut = userLogOut;
 

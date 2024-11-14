@@ -7,7 +7,7 @@
  *
  * @constant {string}
  */
-const baseUrl = "https://join-storage-460c8-default-rtdb.europe-west1.firebasedatabase.app/";
+const baseUrl = "https://join-6dc1b-default-rtdb.europe-west1.firebasedatabase.app/";
 
 /**
  * Imports various functions and references for handling user interactions in the contact modal.

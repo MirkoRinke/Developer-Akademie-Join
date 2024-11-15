@@ -286,7 +286,7 @@
       }
 
       .inputEmail {
-        background-image: url(/assets/icons/inputEmail.svg);
+        background-image: url("../assets/icons/inputEmail.svg");
         margin-bottom: 32px;
 
         &:-webkit-autofill {
@@ -301,7 +301,7 @@
       }
 
       .inputPassword {
-        background-image: url(/assets/icons/password.svg);
+        background-image: url("../assets/icons/password.svg");
         &:focus {
           border: 1px solid #29abe2;
           outline: none;
@@ -382,7 +382,7 @@
       }
 
       .inputName {
-        background-image: url(/assets/icons/inputName.svg);
+        background-image: url("../assets/icons/inputName.svg");
         &:focus {
           border: 1px solid #29abe2;
           outline: none;
@@ -390,7 +390,7 @@
       }
 
       .inputEmail {
-        background-image: url(/assets/icons/inputEmail.svg);
+        background-image: url("../assets/icons/inputEmail.svg");
         &:focus {
           border: 1px solid #29abe2;
           outline: none;
@@ -398,7 +398,7 @@
       }
 
       .inputPassword {
-        background-image: url(/assets/icons/password.svg);
+        background-image: url("../assets/icons/password.svg");
         &:focus {
           border: 1px solid #29abe2;
           outline: none;

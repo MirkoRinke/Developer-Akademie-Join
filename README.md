@@ -1,6 +1,6 @@
 # 📅 Join - Kanban Board
 
-⏳ **Note:** This project is still under development and not yet complete.
+![](https://raw.githubusercontent.com/MirkoRinke/Developer-Akademie-Join/refs/heads/main/preview.jpg)
 
 Welcome to **Join**, our second group project as part of the Developer Academy! This web-based Kanban board helps you organize tasks, manage workflows, and improve productivity. With an intuitive drag-and-drop interface, you can easily move tasks between different stages like "To-Do", "In Progress", "Await feedback" and "Done".
 

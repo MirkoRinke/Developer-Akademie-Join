@@ -129,6 +129,29 @@ export let newTaskObject = {
 };
 
 /**
+ * Resets the newTaskObject to its default values.
+ */
+export function resetNewTaskObject() {
+  newTaskObject = {
+    id: "",
+    title: "",
+    description: "",
+    assignedTo: { placeholder: "placeholder" },
+    dueDate: "",
+    creationDate: "",
+    creatorId: "",
+    priority: "",
+    category: "",
+    categoryColor: "",
+    progress: "",
+    status: "",
+    subtasks: {
+      placeholder: "placeholder",
+    },
+  };
+}
+
+/**
  * Extracts a parameter value from the URL hash and assigns it to the currentStatus variable.
  * If the hash is not present, the function returns without doing anything.
  *

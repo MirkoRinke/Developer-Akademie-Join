@@ -42,6 +42,14 @@ import { hideConfirmDeleteUserDialog } from "../components/contactModal/contactM
 import { newTaskUserFeedback } from "../components/addTask/addTask.js";
 
 /**
+ * Imports the function to reset the new task object.
+ *
+ * @module addTask
+ * @function resetNewTaskObject - Resets the new task object.
+ */
+import { resetNewTaskObject } from "../components/addTask/addTask.js";
+
+/**
  * Loads tasks from the specified API endpoint.
  *
  * @async
@@ -82,6 +90,7 @@ export async function patchNewTask() {
     if (!response.ok) throw new Error("Network response was not ok");
     newTaskUserFeedback();
     await renderTasks();
+    resetNewTaskObject();
     return id;
   } else {
     return;

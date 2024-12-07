@@ -309,6 +309,7 @@ export function clearAddTaskHTML() {
   setGlobalVariablesToDefault();
   clearSelectedUsers();
   closeUsersDropdownList("assignedToDropdownArrow", "contactsToAssign");
+  resetNewTaskObject();
 }
 
 /**

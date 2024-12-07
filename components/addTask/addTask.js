@@ -298,6 +298,7 @@ export function setGlobalVariablesToDefault() {
  * - Calls the setGlobalVariablesToDefault function to reset global variables.
  * - Calls the clearSelectedUsers function to clear the selected users.
  * - Closes the users dropdown list by calling the closeUsersDropdownList function with the specified parameters.
+ * - Calls the resetNewTaskObject function to reset the new task object.
  */
 export function clearAddTaskHTML() {
   document.getElementById("taskDescription").value = "";

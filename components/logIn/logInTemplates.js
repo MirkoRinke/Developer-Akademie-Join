@@ -16,16 +16,16 @@ export function getLogInTemplate(email, password) {
         <p class="logInText">Log in</p>
         <div class="blueUnderlineDiv"></div>
       </div>
-      <div class="logInInputArea">
+      <form class="logInInputArea">
 
       <div class="marginMinusFourteenPx">
         <input id="logInInputEmail" class="inputEmail" oninput="enableLogInButton()" type="email" placeholder="Email" 
-        ${email ? `value="${email}"` : ""}/>
+        ${email ? `value="${email}"` : ''}/>
         <div class="addTaskValidationWarning"><span id="logInInputEmailWarning"></span>&nbsp;</div>
       </div>
       <div class="marginMinusFourteenPx">
-        <input id="logInInputPassword" class="inputPassword" oninput="enableLogInButton()" type="password" placeholder="Password" 
-        ${password ? `value="${password}"` : ""}/>
+        <input id="logInInputPassword" class="inputPassword" oninput="enableLogInButton()" type="password" placeholder="Password"  
+        ${password ? `value="${password}"` : ''} autocomplete="off"/>
         <div class="addTaskValidationWarning"><span id="logInInputPasswordWarning"></span>&nbsp;</div>
       </div>
 
@@ -33,7 +33,7 @@ export function getLogInTemplate(email, password) {
           <input id="checkboxRememberMe" class="checkboxRememberMe" type="checkbox" />
           <p>Remember me</p>
         </div>
-      </div>
+      </form>
       <div class="logInBtnBox">
         <button onclick="logInRegistratedUser()" id="logInBtn" class="logInBtn buttonDisabled" disabled>Log in</button>
         <button onclick="doGuestLogIn()" class="guestLogInBtn">Guest Log In</button>
@@ -68,7 +68,7 @@ export function getSignUpTemplate() {
               <p class="logInText">Sign up</p>
               <div class="blueUnderlineDiv"></div>
             </div>
-            <div class="signUpInputArea">
+            <form class="signUpInputArea">
             <div class="marginMinusFourteenPx">
               <input oninput="enableSignUpButton();
                               removeValidationWarning('signUpInputName', 'signUpInputNameWarning')" 
@@ -90,7 +90,7 @@ export function getSignUpTemplate() {
                               removeValidationWarning('signUpInputPassword', 'signUpInputPasswordWarning')"
                     onfocus="setBorderColorBlue('signUpInputPassword')"
                     onblur="setBorderColorGrey('signUpInputPassword', 'signUpInputPasswordWarning')"
-                     id="signUpInputPassword" class="inputPassword" type="password" placeholder="Password" />
+                     id="signUpInputPassword" class="inputPassword" type="password" placeholder="Password" autocomplete="off" />
               <div class="addTaskValidationWarning"><span id="signUpInputPasswordWarning"></span>&nbsp;</div>
             </div>
             <div class="marginMinusFourteenPx">
@@ -98,7 +98,7 @@ export function getSignUpTemplate() {
                               removeValidationWarning('signUpInputPasswordRepeat', 'signUpInputPasswordRepeatWarning')" 
                      onfocus="setBorderColorBlue('signUpInputPasswordRepeat')"
                      onblur="setBorderColorGrey('signUpInputPasswordRepeat', 'signUpInputPasswordRepeatWarning')"
-                      id="signUpInputPasswordRepeat" class="inputPassword" type="password" placeholder="Password" />
+                      id="signUpInputPasswordRepeat" class="inputPassword" type="password" placeholder="Password" autocomplete="off" />
               <div class="addTaskValidationWarning"><span id="signUpInputPasswordRepeatWarning"></span>&nbsp;</div>
             </div>
             <div class="marginMinusFourteenPx checkToRememberContainer">
@@ -109,7 +109,7 @@ export function getSignUpTemplate() {
               </div>
               <div class="addTaskValidationWarning"><span id="checkBoxWarning"></span>&nbsp;</div>
             </div>
-            </div>
+            </form>
             <div class="logInBtnBox">
               <button onclick="signUpNewUser()" id="signUpBtn" class="signUpBtn buttonDisabled" disabled>Sign up</button>
             </div>
